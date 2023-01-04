@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Dunbar';
+    src: local('Dunbar Low Medium'), local('Dunbar-Low-Medium'),
+        url('DunbarLow-Medium.woff2') format('woff2'),
+        url('DunbarLow-Medium.woff') format('woff'),
+        url('DunbarLow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

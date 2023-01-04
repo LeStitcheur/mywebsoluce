@@ -1,0 +1,206 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+/* ##########################################
+#                                           #
+#                    RESET                  #
+#                                           #
+############################################# */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DunbarLow-Light';
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fefefe;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #292929;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+
+/* ##########################################
+#                                           #
+#                   HEADER                  #
+#                                           #
+############################################# */
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile {
+    display: none;
+}
+nav{
+    position: sticky;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    box-shadow: 0px 0px 5px 0px #fefefe;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: none;
+    color: #fefefe;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    transition: .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+nav ul li a:hover{
+    color: #007DBB;
+    font-family: 'DunbarLow-Medium';
+}
+
+/* ##########################################
+#                                           #
+#                  ACCUEIL                  #
+#                                           #
+############################################# */
+
+/* ##########################################
+#                                           #
+#                PRESTATIONS                #
+#                                           #
+############################################# */
+
+/* ##########################################
+#                                           #
+#                REALISATIONS               #
+#                                           #
+############################################# */
+
+/* ##########################################
+#                                           #
+#                  CONTACT                  #
+#                                           #
+############################################# */
+.contact {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-left,
+.contact-right {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.input-group {
+    position: relative;
+}
+.input:not(textarea){
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    background: #292929;
+    border-radius: 5px;
+    outline: none;
+    color: #fefefe;
+    border: none;
+    border-bottom: 2px solid #007DBB;
+}
+
+textarea {
+    min-height: 80px;
+    width: 400px;
+    padding: 10px;
+    background: #292929;
+    border-radius: 5px;
+    outline: none;
+    color: #fefefe;
+    border: none;
+    border-bottom: 2px solid #007DBB;
+}
+
+.placeholder {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    font-size: 14px;
+    padding: 0 5px;
+    color: #007DBB;
+    font-family: 'DunbarLow-Medium';
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+}
+.input:focus + .placeholder,
+.input:not(:placeholder-shown) + .placeholder {
+    top: -10px;
+    background-color: #292929;
+}
+
+/* ##########################################
+#                                           #
+#                MEDIA-QUERIES              #
+#                                           #
+############################################# */
+
+@media screen and (max-width: 900px) {
+    .mobile {
+        display: block;
+    }
+    .desk {
+        display: none;
+    }
+}
