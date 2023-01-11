@@ -16,16 +16,19 @@
                 <img src="assets/img/MyWebSoluce-Logo-Ligne-Blue.png" alt="Logo MyWebSoluce">
             </a>
             <a href="index.html" class='mobile'>
-                <img src="assets/img/Logo-Blue.png" alt="Logo MyWebSoluce">
+                <img src="assets/img/MyWebSoluce-Logo-White.png" alt="Logo MyWebSoluce">
             </a>
         </div>
         <nav id="menu">
-            <ul>
+            <ul class="menu__desktop">
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="prestations.html">Prestations</a>
+                </li>
+                <li>
+                    <a href="utils.html">Boîte à outils</a>
                 </li>
                 <li>
                     <a href="real.html">Réalisations</a>
@@ -34,6 +37,33 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
+            <div class="menu__mobile">
+                <span class="menu__mobile__trigger">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                    <span>MENU</span>
+                </span>
+                <ul class="menu__mobile__list">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="prestations.html">Prestations</a>
+                    </li>
+                    <li>
+                        <a href="utils.html">Boîte à outils</a>
+                    </li>
+                    <li>
+                        <a href="real.html">Réalisations</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
     </header>
@@ -73,6 +103,14 @@
     <footer>
 
     </footer>
+    <script>
+        let nav = document.querySelector('nav');
+        let trigger = document.querySelector('.menu__mobile__trigger');
+
+        trigger.addEventListener('click', function () {
+            nav.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
