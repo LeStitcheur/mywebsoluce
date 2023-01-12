@@ -4,6 +4,7 @@
     user-select: none;
 }
 strong {
+    font-weight: 700;
     color: #007DDB;
 }
 
@@ -152,10 +153,12 @@ strong {
 }
 
 .terminal_content img {
-    position: absolute;
-    border-radius: 100%;
+    /* position: absolute;
     right: 30px;
-    bottom: 30px;
+    bottom: 30px; */
+    border-radius: 100%;
+    float: right;
+    margin-right: 30px;
 }
 
 
