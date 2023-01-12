@@ -104,6 +104,14 @@ nav .menu__desktop li a:hover{
     font-family: 'DunbarLow-Medium';
 }
 
+nav .menu__desktop li a.active,
+nav .menu__mobile__list li a.active{
+    color: #007DBB;
+    font-weight: bold;
+    user-select: none;
+    pointer-events: none;
+}
+
 /* ##########################################
 #                                           #
 #                  ACCUEIL                  #
@@ -111,6 +119,7 @@ nav .menu__desktop li a:hover{
 ############################################# */
 
 main {
+    margin-top: 30px;
     width:  100%;
     height: auto;
     display: flex;

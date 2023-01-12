@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebSoluce - Accueil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="assets/img/Logo-Blue.png" type="image/x-icon">
 </head>
 <body>
@@ -20,7 +21,10 @@
         <nav id="menu">
             <ul class="menu__desktop">
                 <li>
-                    <a href="index.html">Accueil</a>
+                    <a href="index.html" class='active'>Accueil</a>
+                </li>
+                <li>
+                    <a href="about.html">Qui suis-je ?</a>
                 </li>
                 <li>
                     <a href="prestations.html">Prestations</a>
@@ -46,13 +50,16 @@
                 </span>
                 <ul class="menu__mobile__list">
                     <li>
-                        <a href="index.html">Accueil</a>
+                        <a href="index.html" class='active'>Accueil</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Qui suis-je ?</a>
                     </li>
                     <li>
                         <a href="prestations.html">Prestations</a>
                     </li>
                     <li>
-                        <a href="utils.html">Boîte à outils</a>
+                        <a href="outils.html">Boîte à outils</a>
                     </li>
                     <li>
                         <a href="real.html">Réalisations</a>
@@ -66,7 +73,63 @@
     
     </header>
     <main>
+        <div class="container">
+            <div class="container_terminal"></div>
+            <div class="terminal_toolbar">
+                <div class="butt">
+                    <button class='btn btn-color'></button>
+                    <button class='btn'></button>
+                    <button class='btn'></button>
+                </div>
+                <p class="user">LeStitcheurFou@admin: ~</p>
+            </div>
+            <div class="terminal_body">
+                <div class="terminal_promt">
+                    <span class="terminal_user">LeStitcheurFou@admin:</span>
+                    <span class="teminal_location">~</span>
+                    <span class="teminal_bling">$</span>
+                    
+                </div>
+                <div class="terminal_content">
+                    <p class="terminal_text">
+                        <span class="terminal_text__line">
+                            <span class="terminal_text__line__text">Bonjour, je suis Alexandre Harel, <strong>développeur web / web mobile</strong> et créateur de <strong>MyWebSoluce&copy</strong>.</span>
+                        </span>
+                        <span class="terminal_text__line">
+                            <span class="terminal_text__line__text">Je vous propose mes services pour la <strong>création de votre site web.</strong></span>
+                        </span>
+                        <span class="terminal_text">
+                            <span class="terminal_text__line">Je vous propose aussi des services de <strong>formation et de médiation numérique.</strong></span>
+                        </span>
+                        <span class="terminal_text__line">
+                            <span class="terminal_text__line__text"><strong>Accessibilité</strong>, <strong>éthique</strong>, <strong>écoconception</strong>, sont mes maîtres mots</span>
+                        </span>
+                        <span class="terminal_text__line">
+                            <span class="terminal_text__line__text">Vous pouvez me contacter via le formulaire de contact.</span>
+                        </span>
+                        <span class="terminal_text__line">
+                            <span class="terminal_text__line__text">Bonne visite !</span>
+                        </span>    
+                    </p> 
+                    <img src="assets/img/pdp.jpg" alt="Photo de profil Alexandre Harel">
+                </div>
+                <div class="terminal_promt">
+                    <span class="terminal_user">lestitcheurfou@admin:</span>
+                    <span class="teminal_location">~</span>
+                    <span class="teminal_bling">$</span>
+                    <span class="terminal_cursor"></span>
+                </div>
+                <div class="buttons">
+                    <button class="link">
+                        <a href="contact.html">Me Contacter</a>
+                    </button>
+                    <button class="link">
+                        <a href="prestations.html">Voir mes prestations</a>
+                    </button>
+                </div>
 
+            </div>
+        </div>
     </main>
     <footer>
 
