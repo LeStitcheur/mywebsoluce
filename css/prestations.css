@@ -1,0 +1,83 @@
+#dev{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 290px;
+    height: 300px;
+    padding: .5rem;
+    background: rgba(198, 198, 198, .34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    border-bottom: 3px solid rgba(255,255,255,.440);
+    border-left: 2px rgba(255,255,255,.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, .280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: #fefefe;
+}
+
+.card:hover {
+    height: 500px;
+    transform: skewX(0deg);
+}
+
+.align {
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+.red,
+.yellow,
+.green{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, .280);
+}
+
+.red {
+    background-color: #ff605c;
+}
+.yellow{
+    background-color: #ffbd44;
+}
+.green{
+    background-color: #00ca4e;
+}
+
+.price {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 10px 10px;
+    color: #fefefe;
+    background-color: #007DBB;
+    border-radius: 0 0 0 10px;
+    text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 2rem;
+    color: rgb(218, 244, 237);
+    font-family: 'DunbarLow-Medium';
+    text-shadow: -10px 5px 10px rgba(0,0,0,.573);
+}
+
+.card p {
+
+}
