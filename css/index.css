@@ -156,7 +156,9 @@ strong {
     /* position: absolute;
     right: 30px;
     bottom: 30px; */
-    border-radius: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
     float: right;
     margin-right: 30px;
 }
