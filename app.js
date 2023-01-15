@@ -9,8 +9,12 @@ console.log(totalHeight)
 window.addEventListener('scroll', () => {
 
     let progress  = (document.documentElement.scrollTop / totalHeight) * 100;
-    
+    if(progress >= 80){
+        progessBar.style.width = "100%";
+    }
+    else{
     progessBar.style.width = `${progress}%`;
+    }
 })
 
 const progessBarClick = document.querySelector('.clickScrollbar');
