@@ -2,6 +2,7 @@
     width: 800px;
     min-height: 400px;
     user-select: none;
+    color: #fefefe;
 }
 strong {
     font-weight: 700;
@@ -21,17 +22,17 @@ strong {
 .butt{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin-right: 5px;
-    font-size: 8px;
-    height: 12px;
-    width: 12px;
+    font-size: 10px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
     border: none;
     border-radius: 100%;
     background: linear-gradient(#7d7871 0%, #595953 100%);
@@ -184,11 +185,12 @@ strong {
     cursor: pointer;
     transition: .5s;
     border: 1px solid;
-    color: var(--color);
+    color: #fefefe;
 }
 
 .link a {
     text-decoration: none;
+    color: #fefefe;
 }
 
 

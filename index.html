@@ -78,9 +78,9 @@
             <div class="container_terminal"></>
             <div class="terminal_toolbar">
                 <div class="butt">
-                    <button class='btn btn-color'></button>
-                    <button class='btn'></button>
-                    <button class='btn'></button>
+                    <button class='btn btn-color'>&#10006;</button>
+                    <button class='btn'>&#128469;</button>
+                    <button class='btn'>&#128470;</button>
                 </div>
                 <p class="user">LeStitcheurFou@admin: ~</p>
             </div>
@@ -143,16 +143,6 @@
         trigger.addEventListener('click', function() {
             nav.classList.toggle('open');
         });
-
-        let progress = document.querySelector('.progress');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function() {
-            let progressHeight = (window.pageYOffset / totalHeight) * 100;
-            progress.style.width = progressHeight + "%";
-        }
-
-
-
     </script>
 </body>
 </html>
