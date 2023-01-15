@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="logo">
             <a href="index.html" class='desk'>
                 <img src="assets/img/MyWebSoluce-Logo-Ligne-Blue.png" alt="Logo MyWebSoluce">
@@ -72,10 +72,11 @@
             </div>
         </nav>
 
-    </header>
+    </header> -->
     <main>
-        <aside class='progress'></aside>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident accusantium esse dolore non excepturi? Incidunt adipisci quas tempore numquam nulla vitae, quia quos molestias nihil provident, culpa, eligendi vero obcaecati.
+        <div class="scrollbar"></div>
+        <div class="clickScrollbar"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident accusantium esse dolore non excepturi? Incidunt adipisci quas tempore numquam nulla vitae, quia quos molestias nihil provident, culpa, eligendi vero obcaecati.
         Minima, dignissimos qui earum praesentium alias provident quae dolorem architecto excepturi rerum officiis quia commodi iusto natus impedit iure itaque vero, dolorum facilis illum at omnis dolore. Repellendus, nihil ut.
         Ipsam repellat explicabo eum quam repudiandae vero saepe fuga iste inventore odio adipisci at quidem esse, impedit corrupti ab laboriosam, tempore veniam consectetur. Quis non, molestias deserunt accusamus nesciunt quo?
         Praesentium id quis eligendi dolores molestias. Facere ad nobis aliquam expedita autem, deleniti commodi, a repudiandae quis magni voluptates ratione nam. Quia veniam provident ipsum eveniet asperiores expedita accusamus in!
@@ -274,27 +275,21 @@
         Rerum ex aut maiores nisi quod reprehenderit est praesentium error molestias harum deleniti, atque culpa impedit, debitis corrupti delectus saepe ullam perspiciatis laborum quisquam commodi. Ducimus hic odio necessitatibus ea.
         Culpa, dignissimos harum! Hic perspiciatis magnam, recusandae quasi eius incidunt distinctio? Ducimus, doloremque consectetur? Recusandae corporis quia voluptas, vel explicabo reiciendis nihil saepe fuga, architecto veniam maiores, placeat ea accusamus.
         Tenetur facere veritatis recusandae animi vel hic. Maxime, fugit inventore. Quasi omnis cum ex laudantium alias eius ipsum placeat iusto magnam consequuntur velit, ut, recusandae corrupti, debitis earum fugit tempore?
-        Laudantium maxime odit molestiae, qui a officiis, saepe esse voluptatem animi fugit provident, eligendi cupiditate aliquam magnam? Harum voluptatibus inventore maiores sint, omnis tempore, et perferendis ipsa voluptatem illo odio!
+        Laudantium maxime odit molestiae, qui a officiis, saepe esse voluptatem animi fugit provident, eligendi cupiditate aliquam magnam? Harum voluptatibus inventore maiores sint, omnis tempore, et perferendis ipsa voluptatem illo odio!</p>
     </main>
     <!-- <footer>
 
     </footer> -->
-
+    <script src="app.js"></script>
     <script>
-        let nav = document.querySelector('nav');
-        let trigger = document.querySelector('.menu__mobile__trigger');
+        // let nav = document.querySelector('nav');
+        // let trigger = document.querySelector('.menu__mobile__trigger');
 
-        trigger.addEventListener('click', function () {
-            nav.classList.toggle('open');
-        });
+        // trigger.addEventListener('click', function () {
+        //     nav.classList.toggle('open');
+        // });
 
-        let progress = document.querySelector('.progress');
-            let totalHeight = document.querySelector('main').scrollHeight - window.innerHeight;
-            window.onscroll = function () {
-                let progressHeight = (window.pageYOffset / totalHeight) * 100;
-                progress.style.width = progressHeight + "%";
-                console.log('progressHeight: ' + progressHeight);
-            }
+
     </script>
 </body>
 

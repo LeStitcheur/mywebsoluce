@@ -17,6 +17,9 @@
     letter-spacing: 2px;
     color: #fefefe;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     width: 100%;
@@ -120,7 +123,7 @@ nav .menu__mobile__list li a.active{
 
 main {
     margin-top: 30px;
-    width:  100%;
+    width:  calc(100% - 45px);
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -137,16 +140,30 @@ main {
 ############################################# */
 
 
-.progress {
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.scrollbar {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
-    width: 0%;
-    height: 3px;
-    background: #007DBB;
-    z-index: 2;
+    width: 0;
+    height: 15px;
+    background: linear-gradient(to top, #007DBB, #0090d8);
 }
+
+.clickScrollbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: rgba(170, 170, 170,.356);
+}
+
+
 
 
 /* ##########################################
