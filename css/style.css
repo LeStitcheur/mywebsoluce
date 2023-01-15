@@ -18,6 +18,8 @@
     color: #fefefe;
 }
 html {
+    scrollbar-width: 0;
+    scrollbar-color: transparent transparent;
     scroll-behavior: smooth;
 }
 
