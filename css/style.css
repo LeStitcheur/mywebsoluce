@@ -130,6 +130,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
 }
 
 
@@ -152,6 +153,7 @@ main {
     width: 0;
     height: 15px;
     background: linear-gradient(to top, #007DBB, #0090d8);
+    transition: all .3s ease-in-out;
 }
 
 .clickScrollbar {
