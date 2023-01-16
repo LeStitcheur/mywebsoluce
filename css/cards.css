@@ -1,6 +1,6 @@
 .card {
     width: 80%;
-    min-height: 400px;
+    height: 500px;
     border-radius: 4px;
     background: #292929;
     display: flex;
@@ -30,7 +30,7 @@
 .card p:nth-child(2){
     background: url(../assets/img/mentions_back.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 .card p:hover {

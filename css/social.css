@@ -1,20 +1,29 @@
 #social{
-    width: 50px;
-    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 75px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: invert(9);
     border: 1px solid #fefefe;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     padding: 10px;
     cursor: pointer;
+    background: #f9cc2e;
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 1);
     transition: all .3s ease-in-out;
 }
 
 #social:hover {
     filter: invert(0);
+}
+
+#social i {
+    font-size: 1.5em;
+    color: #333;
+    transition: all .3s ease-in-out;
 }
 
 .socialMedia {
@@ -108,7 +117,7 @@
     background: #0077b5;
 }
 .sci .sli a:hover.tiktok {
-    background: #00f2ea;
+    background: #ff0050;
 }
 
 .sci .sli a i {
