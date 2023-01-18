@@ -125,6 +125,9 @@
 .sci .sli a:hover.tiktok {
     background: #ff0050;
 }
+.sci .sli a:hover.discord {
+    background: #5865F2;
+}
 
 .sci .sli a i {
     font-size: 4em;
