@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../css/social.css">
+
+<aside id="social">
+    <i class="fa-solid fa-link"></i>
+</aside>
+<section class='socialMedia'>
+    <aside id='close'>
+        &#10006;
+    </aside>
+    <ul class="sci">
+        <li class='sli' data-text="@LeStitcheurF0u" data-color="#6e5494">
+            <a href="https://github.com/LeStitcheurF0u" target='_blank' class='github'>
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </li>
+        <li class='sli' data-text="Alexandre Harel" data-color="#0077b5">
+            <a href="" class='linkedin'>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class='sli' data-text="@LeStitcheurFou" data-color="#1f8f94">
+            <a href="" class='tiktok'>
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<script src="../assets/js/social.js"></script>
+<script src="../assets/js/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".sci .sli a"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+    VanillaTilt.init(document.querySelectorAll("#social"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+</script>

@@ -2,27 +2,27 @@
     position: fixed;
     top: 50px;
     left: 0px;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fefefe;
     border-radius: 0 10px 10px 0;
     padding: 10px;
     cursor: pointer;
-    background: #f9cc2e;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);    
+    -webkit-backdrop-filter: blur(20px);
+    transform-style: preserve-3d;
+    perspective: 3000px;
     transition: all .3s ease-in-out;
 }
 
-#social:hover {
-    filter: invert(0);
-}
 
 #social i {
     font-size: 1.5em;
-    color: #333;
+    color: #fefefe;
     transition: all .3s ease-in-out;
 }
 
@@ -64,10 +64,16 @@
     position: relative;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .sci .sli {
     list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .sci .sli::before{
