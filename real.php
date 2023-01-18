@@ -25,19 +25,19 @@
                     <a href="index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html">Qui suis-je ?</a>
+                    <a href="about.php">Qui suis-je ?</a>
                 </li>
                 <li>
-                    <a href="prestations.html">Prestations</a>
+                    <a href="prestations.php">Prestations</a>
                 </li>
                 <li>
-                    <a href="outils.html">Boîte à outils</a>
+                    <a href="outils.php">Boîte à outils</a>
                 </li>
                 <li>
-                    <a href="real.html" class='active'>Réalisations</a>
+                    <a href="real.php" class='active'>Réalisations</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
             </ul>
             <div class="menu__mobile">
@@ -54,19 +54,19 @@
                         <a href="index.php">Accueil</a>
                     </li>
                     <li>
-                        <a href="about.html">Qui suis-je ?</a>
+                        <a href="about.php">Qui suis-je ?</a>
                     </li>
                     <li>
-                        <a href="prestations.html">Prestations</a>
+                        <a href="prestations.php">Prestations</a>
                     </li>
                     <li>
-                        <a href="outils.html">Boîte à outils</a>
+                        <a href="outils.php">Boîte à outils</a>
                     </li>
                     <li>
-                        <a href="real.html" class='active'>Réalisations</a>
+                        <a href="real.php" class='active'>Réalisations</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,9 @@
 
     </header>
     <main>
-
+        <?php
+        include 'import/social.html';
+        ?>
     </main>
     <footer>
 
@@ -84,7 +86,7 @@
         let nav = document.querySelector('nav');
         let trigger = document.querySelector('.menu__mobile__trigger');
 
-        trigger.addEventListener('click', function () {
+        trigger.addEventListener('click', function() {
             nav.classList.toggle('open');
         });
     </script>

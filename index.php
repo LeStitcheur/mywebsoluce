@@ -27,19 +27,19 @@
                     <a href="index.php" class='active'>Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html">Qui suis-je ?</a>
+                    <a href="about.php">Qui suis-je ?</a>
                 </li>
                 <li>
-                    <a href="prestations.html">Prestations</a>
+                    <a href="prestations.php">Prestations</a>
                 </li>
                 <li>
-                    <a href="outils.html">Boîte à outils</a>
+                    <a href="outils.php">Boîte à outils</a>
                 </li>
                 <li>
-                    <a href="real.html">Réalisations</a>
+                    <a href="real.php">Réalisations</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
             </ul>
             <div class="menu__mobile">
@@ -53,22 +53,22 @@
                 </span>
                 <ul class="menu__mobile__list">
                     <li>
-                        <a href="index.html" class='active'>Accueil</a>
+                        <a href="index.php" class='active'>Accueil</a>
                     </li>
                     <li>
-                        <a href="about.html">Qui suis-je ?</a>
+                        <a href="about.php">Qui suis-je ?</a>
                     </li>
                     <li>
-                        <a href="prestations.html">Prestations</a>
+                        <a href="prestations.php">Prestations</a>
                     </li>
                     <li>
-                        <a href="outils.html">Boîte à outils</a>
+                        <a href="outils.php">Boîte à outils</a>
                     </li>
                     <li>
-                        <a href="real.html">Réalisations</a>
+                        <a href="real.php">Réalisations</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>

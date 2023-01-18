@@ -26,19 +26,19 @@
                     <a href="index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html">Qui suis-je ?</a>
+                    <a href="about.php">Qui suis-je ?</a>
                 </li>
                 <li>
-                    <a href="prestations.html">Prestations</a>
+                    <a href="prestations.php">Prestations</a>
                 </li>
                 <li>
-                    <a href="outils.html" class='active'>Boîte à outils</a>
+                    <a href="outils.php" class='active'>Boîte à outils</a>
                 </li>
                 <li>
-                    <a href="real.html">Réalisations</a>
+                    <a href="real.php">Réalisations</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
             </ul>
             <div class="menu__mobile">
@@ -55,19 +55,19 @@
                         <a href="index.php">Accueil</a>
                     </li>
                     <li>
-                        <a href="about.html">Qui suis-je ?</a>
+                        <a href="about.php">Qui suis-je ?</a>
                     </li>
                     <li>
-                        <a href="prestations.html">Prestations</a>
+                        <a href="prestations.php">Prestations</a>
                     </li>
                     <li>
-                        <a href="outils.html" class="active">Boîte à outils</a>
+                        <a href="outils.php" class="active">Boîte à outils</a>
                     </li>
                     <li>
-                        <a href="real.html">Réalisations</a>
+                        <a href="real.php">Réalisations</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,31 +75,34 @@
 
     </header>
     <main>
-    <section class="card">
-        <p>
-            <span>
-                <a href="https://geneqrtor.mywebsoluce.fr">
-                    <img src="assets/img/pointer.png" alt="Accéder au générateur de QR-Code">
-                    <span>Accéder</span>
-                </a>
-                <a href="#">
-                    <img src="assets/img/about.png" alt="En savoir plus">
-                    <span>En savoir plus</span>
-                </a>
-            </span>
-        </p>
-        <p><span>
-            <a href="https://mentions.mywebsoluce.fr">
-                <img src="assets/img/pointer.png" alt="Accéder au générateur de mentions légales">
-                <span>Accéder</span>
-            </a>
-            <a href="#">
-                <img src="assets/img/about.png" alt="En savoir plus">
-                <span>En savoir plus</span>
-            </a>
-        </span></p>
-        <p><span>A venir</span></p>
-</section>
+        <?php
+        include 'import/social.html';
+        ?>
+        <section class="card">
+            <p>
+                <span>
+                    <a href="https://geneqrtor.mywebsoluce.fr">
+                        <img src="assets/img/pointer.png" alt="Accéder au générateur de QR-Code">
+                        <span>Accéder</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/about.png" alt="En savoir plus">
+                        <span>En savoir plus</span>
+                    </a>
+                </span>
+            </p>
+            <p><span>
+                    <a href="https://mentions.mywebsoluce.fr">
+                        <img src="assets/img/pointer.png" alt="Accéder au générateur de mentions légales">
+                        <span>Accéder</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/about.png" alt="En savoir plus">
+                        <span>En savoir plus</span>
+                    </a>
+                </span></p>
+            <p><span>A venir</span></p>
+        </section>
     </main>
     <footer>
 
@@ -109,7 +112,7 @@
         let nav = document.querySelector('nav');
         let trigger = document.querySelector('.menu__mobile__trigger');
 
-        trigger.addEventListener('click', function () {
+        trigger.addEventListener('click', function() {
             nav.classList.toggle('open');
         });
     </script>

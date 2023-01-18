@@ -26,19 +26,19 @@
                     <a href="index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html">Qui suis-je ?</a>
+                    <a href="about.php">Qui suis-je ?</a>
                 </li>
                 <li>
-                    <a href="prestations.html" class='active'>Prestations</a>
+                    <a href="prestations.php" class='active'>Prestations</a>
                 </li>
                 <li>
-                    <a href="outils.html">Boîte à outils</a>
+                    <a href="outils.php">Boîte à outils</a>
                 </li>
                 <li>
-                    <a href="real.html">Réalisations</a>
+                    <a href="real.php">Réalisations</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
             </ul>
             <div class="menu__mobile">
@@ -55,19 +55,19 @@
                         <a href="index.php">Accueil</a>
                     </li>
                     <li>
-                        <a href="about.html">Qui suis-je ?</a>
+                        <a href="about.php">Qui suis-je ?</a>
                     </li>
                     <li>
-                        <a href="prestations.html" class='active'>Prestations</a>
+                        <a href="prestations.php" class='active'>Prestations</a>
                     </li>
                     <li>
-                        <a href="outils.html">Boîte à outils</a>
+                        <a href="outils.php">Boîte à outils</a>
                     </li>
                     <li>
-                        <a href="real.html">Réalisations</a>
+                        <a href="real.php">Réalisations</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,6 +75,9 @@
 
     </header>
     <main>
+        <?php
+        include 'import/social.html';
+        ?>
         <h1>Mes prestations</h1>
         <section id='catagory'>
             <a href="">Création de site web</a>
@@ -104,7 +107,7 @@
                 <h2>Site catalogue</h2>
                 <p>Un site catalogue est un site web qui présente votre entreprise, votre activité, vos produits ou services. Il est
                     le premier contact que vos clients auront avec vous. Il doit donc être clair, simple et efficace. Il doit
-                    être facilement accessible et doit donner envie à vos visiteurs de vous contacter.</p>    
+                    être facilement accessible et doit donner envie à vos visiteurs de vous contacter.</p>
             </div>
             <div class="card">
                 <div class="align">
@@ -117,7 +120,7 @@
                 <p>Un site e-commerce est un site web qui présente votre entreprise, votre activité, vos produits ou services. Il est
                     le premier contact que vos clients auront avec vous. Il doit donc être clair, simple et efficace. Il doit
                     être facilement accessible et doit donner envie à vos visiteurs de vous contacter.</p>
-        
+
         </section>
 
         <section class='comparaison'>
@@ -137,7 +140,7 @@
         let nav = document.querySelector('nav');
         let trigger = document.querySelector('.menu__mobile__trigger');
 
-        trigger.addEventListener('click', function () {
+        trigger.addEventListener('click', function() {
             nav.classList.toggle('open');
         });
     </script>
