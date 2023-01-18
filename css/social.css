@@ -28,7 +28,7 @@
 
 .socialMedia {
     position: fixed;
-    top:0;
+    top: 0;
     left: -2000px;
     width: 100%;
     height: 100%;
@@ -41,7 +41,7 @@
 }
 .socialMedia.show {
     position: fixed;
-    left: O;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 1;
