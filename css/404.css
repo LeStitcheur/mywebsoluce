@@ -1,0 +1,26 @@
+#terminal  {
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+#output {
+    white-space: pre;
+}
+
+#prompt {
+    display: inline-block;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: monospace;
+}
