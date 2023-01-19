@@ -1,4 +1,0 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/nbxk9044/repositories/mywebsoluce
-    - /bin/cp -R $DEPLOYPATH
