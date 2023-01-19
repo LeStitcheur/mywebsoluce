@@ -130,17 +130,22 @@
 .sci .sli a:hover.twitter {
     background: #1DA1F2;
 }
+.sci .sli a:hover.mail {
+    background: #007DBB;
+}
 
 .sci .sli a i {
     font-size: 4em;
 }
 
-.sci .sli a .fa-brands {
+.sci .sli a .fa-brands,
+.sci .sli a .fa-solid{
     transition: .3s;
     pointer-events: none;
 }
 
-.sci .sli a:hover .fa-brands {
+.sci .sli a:hover .fa-brands,
+.sci .sli a:hover .fa-solid {
     color: #fff;
     transform: scale(1.75) translateZ(50px);
 }
