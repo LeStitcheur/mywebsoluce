@@ -133,6 +133,9 @@
 .sci .sli a:hover.mail {
     background: #007DBB;
 }
+.sci .sli a:hover.youtube {
+    background: #FF0000;
+}
 
 .sci .sli a i {
     font-size: 4em;
