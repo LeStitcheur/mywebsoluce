@@ -6,9 +6,12 @@ const list = document.querySelectorAll('.sci li');
 
 socialBtn.addEventListener('click', () => {
     socialWindow.classList.add('show');
+    socialWindow.style.zIndex = "10";
+    close.style.zIndex = "10";
 })
 close.addEventListener('click', () => {
     socialWindow.classList.remove('show');
+
 })
 
 list.forEach(elements => {

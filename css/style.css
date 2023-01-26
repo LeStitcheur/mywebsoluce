@@ -13,7 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DunbarLow-Light';
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 html {
@@ -35,9 +35,15 @@ body {
 h1 {
     font-size: 24px;
     text-align: center;
+    color: whitesmoke;
 }
 h2 {
     text-align: center;
+    color: whitesmoke;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 
@@ -57,6 +63,10 @@ header {
     gap: 20px;
 }
 
+span {
+    color: whitesmoke;
+}
+
 .mobile {
     display: none;
 }
@@ -64,7 +74,7 @@ header {
 nav .menu__mobile {
     display: none;
 }
-nav{
+nav {
     position: sticky;
     border-top: 1px solid #fefefe;
     border-bottom: 1px solid #fefefe;
@@ -128,8 +138,9 @@ main {
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    gap: 50px;
 }
 
 
@@ -174,6 +185,9 @@ main {
 ############################################# */
 
 @media screen and (max-width: 900px) {
+    header {
+        margin-bottom: 10%;
+    }
     .mobile {
         display: block;
     }
@@ -191,7 +205,7 @@ main {
     }
 
     nav.open{
-        height: 100vh;
+        height: auto;
     }
 
     nav .menu__mobile {

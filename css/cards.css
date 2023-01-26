@@ -55,6 +55,7 @@
 }
 .card p span a {
     text-decoration: none;
+    font-size: 2em;
 }
 
 .card p:hover span, 

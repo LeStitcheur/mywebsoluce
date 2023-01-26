@@ -9,7 +9,7 @@
 
 .card {
     width: 290px;
-    height: 300px;
+    height: 500px;
     padding: .5rem;
     background: rgba(198, 198, 198, .34);
     border-radius: 8px;
@@ -77,4 +77,11 @@
     font-family: 'DunbarLow-Medium';
     text-shadow: -10px 5px 10px rgba(0,0,0,.573);
 }
-
+@media screen and (max-width: 900px) {
+    main {
+        margin-top: 50px;
+    }
+    #dev {
+        margin-top: 30px;
+    }
+}
